@@ -4,9 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="frontend.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="frontend.html">Sharma Travels</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Reservations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">English</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><!--Navigatio Bar-->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="first.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="second.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="third.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-item">
+            <img src="fourth.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-item">
+            <img src="fifth.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><!--carsouel-->
+      <div class="middleMainDiv">
+        <div class="middleDiv1">
+            <h5>Where</h5>
+            <p>YOUR DESTINATION/TOUR NAME</p>
+            <input type="text" class="input" placeholder="e.g city,region country or specific tour">
+        </div>
+        <div class="middleDiv2">
+            <h5>Category</h5>
+            <p>YOUR TOUR TYPE</p>
+            <input type="text" class="input" placeholder="">
+        </div>
+        <div class="middleDiv3">
+            <h5>TOUR START DATE BETWEEN</h5>
+            <div class="middleDiv301">
+            <p>BEGIN</p>
+            <input type="text" class="input" placeholder="">
+            </div>
+            <div class="middleDiv302">
+            <p>END</p>
+            <input type="text" class="input" placeholder="">
+        </div>
+        <div class="middleDiv303">
+            <br/>
+            <br/>
+            <input type="text" class="input" placeholder="Perform Tour Search" style="background-color: rgb(126, 212, 126);">
+        </div>
+        </div>
+        
+        </div><!--middle Content-->
+        <div class="middleMainDiv2">
+            <h4>Best Tour</h4>
+            <div class="middleMainDiv201">
+            <div class="card" style="width: 18rem; ">
+                <img src="athens.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Athens Half Day with Acropolis Museum</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$40</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Athens</a>,<a href="#" class="card-anchor"> Mainland Greece</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+              
+              <div class="card" style="width: 18rem; ">
+                <img src="Halkidiki.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Day Sailing Cruise Halkidiki</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$100</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Macedonia & Thrace</a>,<a href="#" class="card-anchor"> Mainland Greece</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="safari.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">East Crete Fun Safari</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$80</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Crete</a>,<a href="#" class="card-anchor"> Greek Islands & safari</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+             
+              <div class="card" style="width: 18rem;">
+                <img src="greece.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Grand Tour of Greece</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$900</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Athenes</a>,<a href="#" class="card-anchor"> Mainland Greece</a>,<a href="#" class="card-anchor"> Safari</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="aegina.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">One Day Cruise at Saronic</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$110</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">North East Aegean Island</a>,<a href="#" class="card-anchor"> Greek Island</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; ">
+                <img src="scuba diving.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Scuba Diving One Day</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$150</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">santroni</a>,<a href="#" class="card-anchor"> Greek Islands</a>,<a href="#" class="card-anchor"> Surfing</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; ">
+                <img src="Scuba-Diving2.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Scuba Diving Three Days</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$330</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Santroni</a>,<a href="#" class="card-anchor"> Greek Island</a>,<a href="#" class="card-anchor">Water</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem; ">
+                <img src="food.jpg" class="card-img-top" alt="Athens">
+                <div class="card-body">
+                  <h5 class="card-title">Traditional Greek Night</h5>
+                  <p class="card-text">BEST PRICE<br/><span style="color:rgb(109, 197, 109)">$40</span></p>
+                  <p class="card-text"><a href="#" class="card-anchor">Santroni</a>,<a href="#" class="card-anchor"> Greek Island</a>,<a href="#" class="card-anchor"> Food</a>,<a href="#" class="card-anchor"> Greece</a></p>
+                  <a href="#" class="btn btn-primary text-bg-secondary" style="border-radius: 0px;font-size:13px; width:90px;height:30px;text-align:center;border:none;">Book It</a>
+                </div>
+              </div>
+              </div>
+            </div><!--card-->
+
+            <section class="">
+              <!-- Footer -->
+              <footer class="text-bg-white  text-center text-md-start">
+                <!-- Grid container -->
+                <div class="container p-4">
+                  <!--Grid row-->
+                  <div class="row" style="padding:50px;">
+                    <!--Grid column-->
+                    <div class="col-lg-4
+                     col-md-12 mb-4 mb-md-0" style="color:rgb(104, 102, 102)">
+                      <h5 class="text-uppercase">Online Booking</h5>
+            
+                      <p>
+                        Copyright © Demo Sharma Travels - <br/>Tours / Excursions<br/>
+All rights reserved.<br/><br/>
+
+Book online or call: 001435436347567
+                      </p>
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:rgb(104, 102, 102);">
+                      <h5 class="text-uppercase">Travel Agencies</h5>
+            
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <a href="#!"  class="col-anchor">Agents Login</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!"  class="col-anchor">Agents Register</a><hr/>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color:rgb(104, 102, 102);">
+                      <h5 class="text-uppercase ">Customer Service</h5>
+            
+                      <ul class="list-unstyled mb-0">
+                        <li>
+                          <a href="#!" class="col-anchor">FAQ</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Booking Tips</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Payment Options</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Site Feedback</a><hr/>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0" style="color:rgb(104, 102, 102)">
+                      <h5 class="text-uppercase mb-0">About</h5>
+            
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#!" class="col-anchor">About Us</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Partners</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Customer Service</a><hr/>
+                        </li>
+                        <li>
+                          <a href="#!" class="col-anchor">Terms & Conditions</a><hr/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+            
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2003 - 2022 Online Booking Manager. All rights reserved
+                  <a class="text-black" style="text-decoration:none;font-family: Georgia, 'Times New Roman', Times, serif;"href="frontend.html">| Sharma Travels</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+              <!-- Footer -->
+            </section>  <!--footer-->
+           
+
+
+
+
+
 </body>
 </html>
